@@ -20,7 +20,7 @@ jobs:
 
 
       - name: Build image
-        run: docker build -t pgn123/php-simple-db-app1:latest .
+        run: docker build -t pgn123/php-simple-app:latest .
 
       - name: Push image
-        run: docker push pgn123/php-simple-db-app1:latest
+        run: docker push pgn123/php-simple-app:latest
