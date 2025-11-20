@@ -1,0 +1,14 @@
+services:
+  php-app:
+    image: php:8.2-apache
+    container_name: php-simple
+    ports:
+      - "8080:80"              # http://localhost:8080
+    volumes:
+      - ./php-app:/var/www/html
+    networks:
+      - webnet
+networks:
+  webnet:
+    driver: bridge
+
